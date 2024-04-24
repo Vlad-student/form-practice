@@ -14,9 +14,11 @@ box-sizing: border-box;
     display: flex;
     flex-direction: column;
 }
-.container>*:not(h1,p){
+.container>*:not(h1,p,button){
     display: flex;
-    justify-content: start;
+    justify-content:flex-start;
+    align-items: center;
+    margin-bottom: 10px;
 } 
 .container span{
     display: inline-block;
@@ -41,19 +43,31 @@ label{
     
 }
 button {
+    display: block;
     background-color:rgb(29, 128, 199);
     color: white;
     padding: 10px 20px;
     border: 4px;
 width: 25% ;
-right: 30px;
+margin-left: 30%;
+border-radius: 4px;
 }
     
     input:not(type="radio"),
 textarea,
 select {
-    width: 100%;
+    width: 173px;
     padding: 8px;
+}
+input:not(type="radio"){
+    width: 250px;
+
+}
+select{
+    width: 173px;
+}
+textarea{
+    width: 173px;
 }
 
 
